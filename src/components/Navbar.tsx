@@ -10,7 +10,7 @@ const Navbar: React.FC = () => {
     <header className="px-5 sm:px-[5vw] md:px-[7vw] lg:px-[9vw]">
         <nav className="flex justify-between font-medium py-4">
             <Link to={`/`}><img src={assets.event_logo} alt="event_logo" className="w-24"/></Link>
-            <ul className="hidden sm:flex gap-6 md:gap-10 lg:gap-12 justify-center items-center text-[#CBCBCB]">
+            <ul className="hidden sm:flex gap-4 xs:gap-6 md:gap-8 lg:gap-12 justify-center items-center text-[#CBCBCB]">
                 <NavLink to={`/`} className={`hover:text-[#06AED5]`}>
                     <p>Home</p>
                 </NavLink>
