@@ -1,4 +1,5 @@
 import HeroHome from "../components/HeroHome";
+import Subscribe from "../components/Subscribe";
 
 const Home: React.FC = () => {
   return (
@@ -35,6 +36,7 @@ const Home: React.FC = () => {
           </button>
         </div>
       </section>
+      <Subscribe/>
     </div>
   );
 };

@@ -12,6 +12,10 @@ a.active p{
     font-family: poppins;
 }
 
+footer a:hover{
+    color: #06AED5
+}
+
 .poppins-regular {
     font-family: "Poppins", sans-serif;
     font-weight: 400;

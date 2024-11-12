@@ -1,5 +1,6 @@
 import { Route, Routes } from "react-router-dom"
 import Navbar from "./components/Navbar"
+import Footer from "./components/Footer"
 import { lazy, Suspense } from "react"
 const Home = lazy(() => import("./pages/Home"))
 const About = lazy(() => import("./pages/About"))
@@ -22,6 +23,7 @@ const App: React.FC = () => {
           <Route path="/create-event" element={<CreateEvent/>}/>
         </Routes>
       </Suspense>
+      <Footer/>
     </div>
   )
 }

@@ -6,8 +6,11 @@ import star_icon from "./star_icon.png"
 import play_icon from "./play_icon.png"
 import arrow_left from "./arrow_left.png"
 import arrow_right from "./arrow_right.png"
+import facebook from "./Vector (5).png"
+import twitter from "./Vector (6).png"
+import instagram from "./Vector (7).png"
 
-export const assets= {
+export const assets = {
     event_logo,
     dropdown_icon,
     menu_icon,
@@ -15,5 +18,8 @@ export const assets= {
     star_icon,
     play_icon,
     arrow_left,
-    arrow_right
+    arrow_right,
+    facebook,
+    twitter,
+    instagram
 }
