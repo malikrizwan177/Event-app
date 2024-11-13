@@ -11,6 +11,9 @@ import twitter from "./Vector (6).png"
 import instagram from "./Vector (7).png"
 import prom1 from "./promotion1.png"
 import prom2 from "./promotion2.png"
+import applestore from "./applestore.png"
+import googleplay from "./googleplay.png"
+import phone from "./phone.png"
 
 export const assets = {
     event_logo,
@@ -25,5 +28,8 @@ export const assets = {
     twitter,
     instagram,
     prom1,
-    prom2
+    prom2,
+    applestore,
+    googleplay,
+    phone
 }
