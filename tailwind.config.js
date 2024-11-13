@@ -11,6 +11,7 @@ export default {
       },
       backgroundImage: {
         'hero-home': "url('./assets/home_hero1.png')",
+        'promotion-bg': "url('./assets/promotion_bg.png')"
       }
     },
   },

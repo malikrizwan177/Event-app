@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { assets } from "../assets";
 
-const Footer = () => {
+const Footer:React.FC = () => {
   return (
     <>
       <footer className="px-5 sm:px-[5vw] md:px-[7vw] lg:px-[9vw] py-10 md:py-20 w-full">

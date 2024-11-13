@@ -9,6 +9,8 @@ import arrow_right from "./arrow_right.png"
 import facebook from "./Vector (5).png"
 import twitter from "./Vector (6).png"
 import instagram from "./Vector (7).png"
+import prom1 from "./promotion1.png"
+import prom2 from "./promotion2.png"
 
 export const assets = {
     event_logo,
@@ -21,5 +23,7 @@ export const assets = {
     arrow_right,
     facebook,
     twitter,
-    instagram
+    instagram,
+    prom1,
+    prom2
 }
