@@ -16,6 +16,25 @@ footer a:hover{
     color: #06AED5
 }
 
+#card_1:hover > p {
+    color: white;
+}
+#card_1:hover > img {
+    background-color: white;
+}
+#card_2:hover > p {
+    color: white;
+}
+#card_2:hover > img {
+    background-color: white;
+}
+#card_3:hover > p {
+    color: white;
+}
+#card_3:hover > img {
+    background-color: white;
+}
+
 .poppins-regular {
     font-family: "Poppins", sans-serif;
     font-weight: 400;

@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { assets } from "../assets";
+import CustomButton from "./CustomButton";
 
 const HeroHome: React.FC = () => {
 
@@ -32,11 +33,7 @@ const HeroHome: React.FC = () => {
           <img src={assets.star_icon} alt="star_icon" className="w-5" />
         </div>
         <div className="flex gap-10 items-center mt-5">
-          <button
-            className={`px-5 py-2 bg-primary text-white hover:bg-cyan-400 rounded-lg text-center`}
-          >
-            Get Tickets
-          </button>
+        <CustomButton text={`Get Tickets`} bg_color={`bg-primary`} text_color={`text-white`} hover_bg_color={`bg-cyan-400`} hover_text_color={``} other_classes={``} onclick_func={() => {}}></CustomButton>
           <img
             src={assets.play_icon}
             alt="play_icon"

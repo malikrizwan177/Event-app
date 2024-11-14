@@ -14,6 +14,12 @@ import prom2 from "./promotion2.png"
 import applestore from "./applestore.png"
 import googleplay from "./googleplay.png"
 import phone from "./phone.png"
+import card_img_1_white from "./card_1_white.png"
+import card_img_1_primary from "./card_1_primary.png"
+import card_img_2_white from "./card_2_white.png"
+import card_img_2_primary from "./card_2_primary.png"
+import card_img_3_white from "./card_3_white.png"
+import card_img_3_primary from "./card_3_primary.png"
 
 export const assets = {
     event_logo,
@@ -31,5 +37,11 @@ export const assets = {
     prom2,
     applestore,
     googleplay,
-    phone
+    phone,
+    card_img_1_primary,
+    card_img_1_white,
+    card_img_2_primary,
+    card_img_2_white,
+    card_img_3_primary,
+    card_img_3_white
 }

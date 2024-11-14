@@ -13,6 +13,9 @@ export default {
         'hero-home': "url('./assets/home_hero1.png')",
         'promotion-bg': "url('./assets/promotion_bg.png')",
         'get-mobile-app-section': "url('./assets/mobile-section-bg.png')"
+      },
+      boxShadow: {
+        'custom-sd': '0 1px 10px 0 rgb(0 0 0 / 0.1), 0 1px 10px 0 rgb(0 0 0 / 0.1);'
       }
     },
   },

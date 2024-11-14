@@ -1,6 +1,7 @@
 import { useState } from "react"
 import { Link, NavLink } from "react-router-dom"
 import { assets } from "../assets"
+import CustomButton from "./CustomButton"
 
 const Navbar: React.FC = () => {
 
@@ -26,8 +27,8 @@ const Navbar: React.FC = () => {
                 <NavLink to={`/login`} className={`hover:text-[#06AED5]`}>
                     <p>Login</p>
                 </NavLink>
-                <NavLink to={`/create-event`} className={`px-5 py-2 bg-primary text-white hover:bg-cyan-400 rounded-lg text-center`}>
-                    <button>Create Event</button>
+                <NavLink to={`/create-event`}>
+                <CustomButton text={`Create Event`} bg_color={`bg-primary`} text_color={`text-white`} hover_bg_color={`bg-cyan-400`} hover_text_color={``} other_classes={``} onclick_func={() => {}}></CustomButton>
                 </NavLink>
             </ul>
             <img onClick={() => setVisible(true)} src={assets.menu_icon} alt="menu_icon" className="w-10 cursor-pointer sm:hidden"/>
