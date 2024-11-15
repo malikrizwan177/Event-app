@@ -20,6 +20,10 @@ import card_img_2_white from "./card_2_white.png"
 import card_img_2_primary from "./card_2_primary.png"
 import card_img_3_white from "./card_3_white.png"
 import card_img_3_primary from "./card_3_primary.png"
+import f_img1 from "./f_img1.png"
+import f_img2 from "./f_img2.png"
+import f_img3 from "./f_img3.png"
+import f_img4 from "./f_img4.png"
 
 export const assets = {
     event_logo,
@@ -43,5 +47,9 @@ export const assets = {
     card_img_2_primary,
     card_img_2_white,
     card_img_3_primary,
-    card_img_3_white
+    card_img_3_white,
+    f_img1,
+    f_img2,
+    f_img3,
+    f_img4
 }
