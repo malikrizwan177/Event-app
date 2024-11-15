@@ -12,7 +12,7 @@ export const filterData: {
    data_type: String, 
    data:{
         img: string,
-        price: Number,
+        price: String,
         month: String,
         date: String,
         location: String,
@@ -22,7 +22,7 @@ export const filterData: {
     data : [
       {
         img: assets.f_img1,
-        price: 40.00,
+        price: '40.00',
         month: 'July',
         date: '20',
         location: 'Gala Convention Center',
@@ -30,26 +30,26 @@ export const filterData: {
       },
       {
         img: assets.f_img2,
-        price: 30.00,
+        price: '30.00',
         month: 'June',
         date: '18',
-        location: "Kim's Convenience Comedy Night",
+        location: "Gala Convention Center",
         description: 'Indonesia-Korea Conference'
       },
       {
         img: assets.f_img3,
-        price: 45.00,
+        price: '45.00',
         month: 'May',
         date: '24',
-        location: 'International Night Music',
+        location: 'Gala Convention Center',
         description: 'Indonesia-Korea Conference'
       },
       {
         img: assets.f_img4,
-        price: 50.00,
+        price: '50.00',
         month: 'April',
         date: '10',
-        location: 'Live-Music Night Party',
+        location: 'Gala Convention Center',
         description: 'Indonesia-Korea Conference'
       },
     ]
@@ -58,15 +58,15 @@ export const filterData: {
     data : [
       {
         img: assets.f_img2,
-        price: 30.00,
+        price: '30.00',
         month: 'June',
         date: '18',
-        location: "Kim's Convenience Comedy Night",
+        location: "Gala Convention Center",
         description: 'Indonesia-Korea Conference'
       },
       {
         img: assets.f_img4,
-        price: 40.00,
+        price: '40.00',
         month: 'July',
         date: '20',
         location: 'Gala Convention Center',
@@ -74,18 +74,18 @@ export const filterData: {
       },
       {
         img: assets.f_img1,
-        price: 50.00,
+        price: '50.00',
         month: 'April',
         date: '10',
-        location: 'Live-Music Night Party',
+        location: 'Gala Convention Center',
         description: 'Indonesia-Korea Conference'
       },
       {
         img: assets.f_img3,
-        price: 45.00,
+        price: '45.00',
         month: 'May',
         date: '24',
-        location: 'International Night Music',
+        location: 'Gala Convention Center',
         description: 'Indonesia-Korea Conference'
       },
     ]
@@ -94,7 +94,7 @@ export const filterData: {
     data : [
       {
         img: assets.f_img4,
-        price: 40.00,
+        price: '40.00',
         month: 'July',
         date: '20',
         location: 'Gala Convention Center',
@@ -102,26 +102,26 @@ export const filterData: {
       },
       {
         img: assets.f_img2,
-        price: 45.00,
+        price: '45.00',
         month: 'May',
         date: '24',
-        location: 'International Night Music',
+        location: 'Gala Convention Center',
         description: 'Indonesia-Korea Conference'
       },
       {
         img: assets.f_img3,
-        price: 30.00,
+        price: '30.00',
         month: 'June',
         date: '18',
-        location: "Kim's Convenience Comedy Night",
+        location: "Gala Convention Center",
         description: 'Indonesia-Korea Conference'
       },
       {
         img: assets.f_img1,
-        price: 50.00,
+        price: '50.00',
         month: 'April',
         date: '10',
-        location: 'Live-Music Night Party',
+        location: 'Gala Convention Center',
         description: 'Indonesia-Korea Conference'
       },
     ]
@@ -130,31 +130,31 @@ export const filterData: {
     data : [
       {
         img: assets.f_img4,
-        price: 30.00,
+        price: '30.00',
         month: 'June',
         date: '18',
-        location: "Kim's Convenience Comedy Night",
+        location: "Gala Convention Center",
         description: 'Indonesia-Korea Conference'
       },
       {
         img: assets.f_img3,
-        price: 45.00,
+        price: '45.00',
         month: 'May',
         date: '24',
-        location: 'International Night Music',
+        location: 'Gala Convention Center',
         description: 'Indonesia-Korea Conference'
       },
       {
         img: assets.f_img2,
-        price: 50.00,
+        price: '50.00',
         month: 'April',
         date: '10',
-        location: 'Live-Music Night Party',
+        location: 'Gala Convention Center',
         description: 'Indonesia-Korea Conference'
       },
       {
         img: assets.f_img1,
-        price: 40.00,
+        price: '40.00',
         month: 'July',
         date: '20',
         location: 'Gala Convention Center',
@@ -166,7 +166,7 @@ export const filterData: {
     data : [
       {
         img: assets.f_img3,
-        price: 40.00,
+        price: '40.00',
         month: 'July',
         date: '20',
         location: 'Gala Convention Center',
@@ -174,26 +174,26 @@ export const filterData: {
       },
       {
         img: assets.f_img4,
-        price: 50.00,
+        price: '50.00',
         month: 'April',
         date: '10',
-        location: 'Live-Music Night Party',
+        location: 'Gala Convention Center',
         description: 'Indonesia-Korea Conference'
       },
       {
         img: assets.f_img1,
-        price: 30.00,
+        price: '30.00',
         month: 'June',
         date: '18',
-        location: "Kim's Convenience Comedy Night",
+        location: "Gala Convention Center",
         description: 'Indonesia-Korea Conference'
       },
       {
         img: assets.f_img1,
-        price: 45.00,
+        price: '45.00',
         month: 'May',
         date: '24',
-        location: 'International Night Music',
+        location: 'Gala Convention Center',
         description: 'Indonesia-Korea Conference'
       },
     ]

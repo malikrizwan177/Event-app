@@ -24,6 +24,8 @@ import f_img1 from "./f_img1.png"
 import f_img2 from "./f_img2.png"
 import f_img3 from "./f_img3.png"
 import f_img4 from "./f_img4.png"
+import heart_red from "./heart.png"
+import location_icon from "./location.png"
 
 export const assets = {
     event_logo,
@@ -51,5 +53,7 @@ export const assets = {
     f_img1,
     f_img2,
     f_img3,
-    f_img4
+    f_img4,
+    heart_red,
+    location_icon
 }
