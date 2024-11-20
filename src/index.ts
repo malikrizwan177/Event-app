@@ -11,6 +11,7 @@ export const currentFilter: {text: String, bg_color: String, text_color: String,
 export const filterData: {
    data_type: String, 
    data:{
+        id: String,
         img: string,
         price: String,
         month: String,
@@ -21,6 +22,7 @@ export const filterData: {
   {data_type: 'All',
     data : [
       {
+        id: '1111',
         img: assets.f_img1,
         price: '40.00',
         month: 'July',
@@ -29,6 +31,7 @@ export const filterData: {
         description: 'Indonesia-Korea Conference'
       },
       {
+        id: '1112',
         img: assets.f_img2,
         price: '30.00',
         month: 'June',
@@ -37,6 +40,7 @@ export const filterData: {
         description: 'Indonesia-Korea Conference'
       },
       {
+        id: '1113',
         img: assets.f_img3,
         price: '45.00',
         month: 'May',
@@ -45,6 +49,7 @@ export const filterData: {
         description: 'Indonesia-Korea Conference'
       },
       {
+        id: '1114',
         img: assets.f_img4,
         price: '50.00',
         month: 'April',
@@ -57,6 +62,7 @@ export const filterData: {
   {data_type: 'Music',
     data : [
       {
+        id: '1115',
         img: assets.f_img2,
         price: '30.00',
         month: 'June',
@@ -65,6 +71,7 @@ export const filterData: {
         description: 'Indonesia-Korea Conference'
       },
       {
+        id: '1116',
         img: assets.f_img4,
         price: '40.00',
         month: 'July',
@@ -73,6 +80,7 @@ export const filterData: {
         description: 'Indonesia-Korea Conference'
       },
       {
+        id: '1117',
         img: assets.f_img1,
         price: '50.00',
         month: 'April',
@@ -81,6 +89,7 @@ export const filterData: {
         description: 'Indonesia-Korea Conference'
       },
       {
+        id: '1118',
         img: assets.f_img3,
         price: '45.00',
         month: 'May',
@@ -93,6 +102,7 @@ export const filterData: {
   {data_type: 'Food Feast',
     data : [
       {
+        id: '1119',
         img: assets.f_img4,
         price: '40.00',
         month: 'July',
@@ -101,6 +111,7 @@ export const filterData: {
         description: 'Indonesia-Korea Conference'
       },
       {
+        id: '1120',
         img: assets.f_img2,
         price: '45.00',
         month: 'May',
@@ -109,6 +120,7 @@ export const filterData: {
         description: 'Indonesia-Korea Conference'
       },
       {
+        id: '1121',
         img: assets.f_img3,
         price: '30.00',
         month: 'June',
@@ -117,6 +129,7 @@ export const filterData: {
         description: 'Indonesia-Korea Conference'
       },
       {
+        id: '1122',
         img: assets.f_img1,
         price: '50.00',
         month: 'April',
@@ -129,6 +142,7 @@ export const filterData: {
   {data_type: 'Sports Gala',
     data : [
       {
+        id: '1123',
         img: assets.f_img4,
         price: '30.00',
         month: 'June',
@@ -137,6 +151,7 @@ export const filterData: {
         description: 'Indonesia-Korea Conference'
       },
       {
+        id: '1124',
         img: assets.f_img3,
         price: '45.00',
         month: 'May',
@@ -145,6 +160,7 @@ export const filterData: {
         description: 'Indonesia-Korea Conference'
       },
       {
+        id: '1125',
         img: assets.f_img2,
         price: '50.00',
         month: 'April',
@@ -153,6 +169,7 @@ export const filterData: {
         description: 'Indonesia-Korea Conference'
       },
       {
+        id: '1126',
         img: assets.f_img1,
         price: '40.00',
         month: 'July',
@@ -165,6 +182,7 @@ export const filterData: {
   {data_type: 'Festivals',
     data : [
       {
+        id: '1127',
         img: assets.f_img3,
         price: '40.00',
         month: 'July',
@@ -173,6 +191,7 @@ export const filterData: {
         description: 'Indonesia-Korea Conference'
       },
       {
+        id: '1128',
         img: assets.f_img4,
         price: '50.00',
         month: 'April',
@@ -181,6 +200,7 @@ export const filterData: {
         description: 'Indonesia-Korea Conference'
       },
       {
+        id: '1129',
         img: assets.f_img1,
         price: '30.00',
         month: 'June',
@@ -189,6 +209,7 @@ export const filterData: {
         description: 'Indonesia-Korea Conference'
       },
       {
+        id: '1130',
         img: assets.f_img1,
         price: '45.00',
         month: 'May',
