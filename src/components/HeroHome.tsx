@@ -26,15 +26,16 @@ const HeroHome: React.FC = () => {
           International Band Music Night
         </h4>
         <div className="flex gap-2 items-center">
-          <img src={assets.star_icon} alt="star_icon" className="w-5" />
-          <img src={assets.star_icon} alt="star_icon" className="w-5" />
-          <img src={assets.star_icon} alt="star_icon" className="w-5" />
-          <img src={assets.star_icon} alt="star_icon" className="w-5" />
-          <img src={assets.star_icon} alt="star_icon" className="w-5" />
+          <img src={assets.star_icon} alt="star_icon" loading="lazy" className="w-5" />
+          <img src={assets.star_icon} alt="star_icon" loading="lazy" className="w-5" />
+          <img src={assets.star_icon} alt="star_icon" loading="lazy" className="w-5" />
+          <img src={assets.star_icon} alt="star_icon" loading="lazy" className="w-5" />
+          <img src={assets.star_icon} alt="star_icon" loading="lazy" className="w-5" />
         </div>
         <div className="flex gap-10 items-center mt-5">
         <CustomButton text={`Get Tickets`} bg_color={`bg-primary`} text_color={`text-white`} hover_bg_color={`bg-cyan-400`} hover_text_color={``} other_classes={``} onclick_func={() => {}}></CustomButton>
           <img
+            loading="lazy"
             src={assets.play_icon}
             alt="play_icon"
             className="rounded-full p-1.5 w-10 bg-white cursor-pointer hover:bg-cyan-100 text-center"
@@ -47,7 +48,7 @@ const HeroHome: React.FC = () => {
           {videoNumber.map((item, index) => (
             <p key={index} onClick={() => setCurrentVideo(index)} className={`${currentVideo === index && 'text-primary -translate-y-2 transition-all duration-300 scale-150'} cursor-pointer`}>{item}</p>
           ))}
-          <img onClick={nextVideo} src={assets.arrow_right} alt="arrow_right" className="cursor-pointer w-8 md:w-12"/>
+          <img onClick={nextVideo} src={assets.arrow_right} alt="arrow_right" loading="lazy" className="cursor-pointer w-8 md:w-12"/>
         </div>
       </div>
     </section>

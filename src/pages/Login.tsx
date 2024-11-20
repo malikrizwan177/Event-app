@@ -103,10 +103,10 @@ const Login: React.FC = () => {
         <p className="text-xs text-[#797979] mt-5">Or SignUp with</p>
         <div className="flex gap-5">
           <div className="rounded-full p-2 shadow-custom-sd cursor-pointer w-10 h-10 flex justify-center items-center bg-slate-100 hover:bg-white">
-            <img src={assets.google_icon} alt="google_icon" />
+            <img src={assets.google_icon} loading="lazy" alt="google_icon" />
           </div>
           <div className="rounded-full p-2 shadow-custom-sd cursor-pointer w-10 h-10 flex justify-center items-center bg-slate-100 hover:bg-white">
-            <img src={assets.facebook_icon} alt="facebook_icon" />
+            <img src={assets.facebook_icon} loading="lazy" alt="facebook_icon" />
           </div>
         </div>
         <span className="flex gap-1 text-xs text-[#797979] mt-5">

@@ -28,10 +28,10 @@ const EventFilter: React.FC = () => {
           {filterData.filter(item => item.data_type === current).map((item) => (
             item.data.map((item, index) => (
               <div key={index} className="flex flex-col gap-x-5 p-1 shadow-custom-sd rounded-lg max-w-[300px] bg-white relative">
-                <img src={item.img} alt="image" className="w-auto"/>
+                <img src={item.img} alt="image" loading="lazy" className="w-auto"/>
                 <div>
                   <p className="py-1 px-3 text-[#E33629] bg-white rounded-lg absolute left-3 top-3">${item.price}</p>
-                  <img src={assets.heart_red} alt="heart_red"  className="p-2 w-8 rounded-full absolute right-3 top-3 bg-white cursor-pointer"/>
+                  <img src={assets.heart_red} alt="heart_red" loading="lazy"  className="p-2 w-8 rounded-full absolute right-3 top-3 bg-white cursor-pointer"/>
                 </div>
                 <div className="flex gap-5 px-2 pt-4 pb-2">
                   <div className="text-center">
@@ -41,7 +41,7 @@ const EventFilter: React.FC = () => {
                   <div>
                     <p className="text-lg text-[#525252] font-semibold leading-relaxed">{item.description}</p>
                     <div className="flex gap-1 mt-2 items-center">
-                      <img src={assets.location_icon} alt="location" className="w-5 h-5"/>
+                      <img src={assets.location_icon} alt="location" loading="lazy" className="w-5 h-5"/>
                       <p className="text-xs text-[#6d6d6d] font-medium">{item.location}</p>
                     </div>
                   </div>

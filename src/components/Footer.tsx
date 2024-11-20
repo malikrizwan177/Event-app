@@ -16,16 +16,19 @@ const Footer:React.FC = () => {
             </p>
             <div className="flex gap-5">
               <img
+                loading="lazy"
                 src={assets.facebook}
                 alt="facebook"
                 className="w-8 h-8 p-2 bg-primary rounded-full cursor-pointer hover:bg-cyan-400"
               />
               <img
+                loading="lazy"
                 src={assets.twitter}
                 alt="twitter"
                 className="w-8 h-8 p-2 bg-primary rounded-full cursor-pointer hover:bg-cyan-400"
               />
               <img
+                loading="lazy"
                 src={assets.instagram}
                 alt="instagram"
                 className="w-8 h-8 p-2 bg-primary rounded-full cursor-pointer hover:bg-cyan-400"

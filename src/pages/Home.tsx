@@ -54,6 +54,7 @@ const Home: React.FC = () => {
             className={`px-10 py-16 shadow-custom-sd rounded-lg flex flex-col gap-5 justify-center items-center hover:bg-primary  transition-all ease-in-out duration-300`}
           >
             <img
+              loading="lazy"
               id="card_img_1"
               src={assets.card_img_1_white}
               alt="updates"
@@ -72,6 +73,7 @@ const Home: React.FC = () => {
             className="px-10 py-16 shadow-custom-sd rounded-lg flex flex-col gap-5 justify-center items-center hover:bg-primary  transition-all ease-in-out duration-300"
           >
             <img
+              loading="lazy"
               id="card_img_2"
               src={assets.card_img_2_white}
               alt="booking"
@@ -90,6 +92,7 @@ const Home: React.FC = () => {
             className="px-10 py-16 shadow-custom-sd rounded-lg flex flex-col gap-5 justify-center items-center hover:bg-primary  transition-all ease-in-out duration-300"
           >
             <img
+              loading="lazy"
               id="card_img_3"
               src={assets.card_img_3_white}
               alt="match"
@@ -110,6 +113,7 @@ const Home: React.FC = () => {
         <div className="flex flex-col lg:flex-row gap-10 justify-center items-center mt-10">
           <div className="rounded-lg flex items-center max-w-[650px] w-full bg-white">
             <img
+              loading="lazy"
               src={assets.prom1}
               alt="prom1"
               className="rounded-l-lg max-w-[200px] object-contain"
@@ -127,6 +131,7 @@ const Home: React.FC = () => {
           </div>
           <div className="rounded-lg flex items-center max-w-[650px] w-full bg-white">
             <img
+              loading="lazy"
               src={assets.prom2}
               alt="prom2"
               className="rounded-l-lg max-w-[200px] object-contain"
@@ -158,6 +163,7 @@ const Home: React.FC = () => {
             <div className="mt-2 flex gap-10 items-center">
               <Link to={`/`}>
                 <img
+                  loading="lazy"
                   src={assets.applestore}
                   alt="applestore"
                   className="w-auto"
@@ -165,6 +171,7 @@ const Home: React.FC = () => {
               </Link>
               <Link to={`/`}>
                 <img
+                  loading="lazy"
                   src={assets.googleplay}
                   alt="googleplay"
                   className="w-auto"
@@ -173,6 +180,7 @@ const Home: React.FC = () => {
             </div>
           </div>
           <img
+            loading="lazy"
             src={assets.phone}
             alt="phone"
             className="w-auto overflow-hidden md:min-w-[250px] md:-mb-10"
