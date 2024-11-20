@@ -1,14 +1,10 @@
 import { useParams } from "react-router-dom";
 import EventFilter from "../components/EventFilter";
 import Subscribe from "../components/Subscribe";
-import { useEffect, useState } from "react";
 import { filterData } from "..";
 
-type Props = {};
-
-const EventDetail: React.FC = (props: Props) => {
+const EventDetail: React.FC = () => {
   const { eventId } = useParams();
-  const [targetEvent, setTargetEvent] = useState<[]>([]);
 
   return (
     <section className="">
