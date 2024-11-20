@@ -48,8 +48,8 @@ const Login: React.FC = () => {
   }
 
   return (
-    <section className="px-5 sm:px-[5vw] md:px-[7vw] lg:px-[9vw] bg-login-bg bg-no-repeat bg-cover h-lvh flex justify-end">
-      <div className={`py-10 px-10 sm:px-20 flex flex-col items-center justify-start gap-5 bg-white max-w-[530px] ${currentState ? 'max-h-[700px]' : 'h-[650px]'} w-full rounded-lg my-20`}>
+    <section className="px-5 sm:px-[5vw] md:px-[7vw] lg:px-[9vw] bg-login-bg bg-no-repeat bg-cover h-[770px] sm:h-lvh flex justify-center lg:justify-end">
+      <div className={`py-10 px-8 sm:px-20 flex flex-col items-center justify-start gap-5 bg-white max-w-[530px] ${currentState ? 'max-h-[700px]' : 'h-[650px]'} w-full rounded-lg my-20`}>
         <p className="font-semibold text-2xl">Sign {currentState ? 'In' : 'Up'}</p>
         <form
           onSubmit={onSubmitFormHandler}
