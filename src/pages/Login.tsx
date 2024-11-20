@@ -87,9 +87,16 @@ const Login: React.FC = () => {
             required
             className="outline-none shadow-custom-sd p-4 w-full rounded-lg text-xs text-[#797979]"
           />
-          <p className="text-xs text-[#797979] text-right hover:text-primary cursor-pointer">
+          {currentState ? (
+            <p className="text-xs text-[#797979] text-right hover:text-primary cursor-pointer">
             Forgot Password?
           </p>
+          ) : (
+            <div className="flex items-center gap-2">
+              <input type="checkbox" name="checkbox" id="checkbox" className="" required/>
+              <p className="text-xs text-[#797979]">Agree with Terms & Conditions</p>
+            </div>
+          )}
           <CustomButton
             text={`Sign ${currentState ? 'In' : 'Up'}`}
             text_color={"text-white"}

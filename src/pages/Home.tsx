@@ -174,7 +174,7 @@ const Home: React.FC = () => {
                   loading="lazy"
                   src={assets.googleplay}
                   alt="googleplay"
-                  className="w-auto"
+                  className="w-auto -mb-1"
                 />
               </Link>
             </div>

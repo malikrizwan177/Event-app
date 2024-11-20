@@ -15,24 +15,27 @@ const Footer:React.FC = () => {
               visual form of a document. Lorem ipsum.
             </p>
             <div className="flex gap-5">
-              <img
-                loading="lazy"
-                src={assets.facebook}
-                alt="facebook"
-                className="w-8 h-8 p-2 bg-primary rounded-full cursor-pointer hover:bg-cyan-400"
-              />
-              <img
-                loading="lazy"
-                src={assets.twitter}
-                alt="twitter"
-                className="w-8 h-8 p-2 bg-primary rounded-full cursor-pointer hover:bg-cyan-400"
-              />
-              <img
-                loading="lazy"
-                src={assets.instagram}
-                alt="instagram"
-                className="w-8 h-8 p-2 bg-primary rounded-full cursor-pointer hover:bg-cyan-400"
-              />
+              <div className="w-9 h-9 p-3 bg-primary rounded-full cursor-pointer hover:bg-cyan-400 flex justify-center items-center">
+                <img
+                  loading="lazy"
+                  src={assets.facebook}
+                  alt="facebook" 
+                />
+              </div>
+              <div className="w-9 h-9 p-2 bg-primary rounded-full cursor-pointer hover:bg-cyan-400 flex justify-center items-center">
+                <img
+                  loading="lazy"
+                  src={assets.twitter}
+                  alt="twitter"
+                />
+              </div>
+              <div className="w-9 h-9 p-2 bg-primary rounded-full cursor-pointer hover:bg-cyan-400 flex justify-center items-center">
+                <img
+                  loading="lazy"
+                  src={assets.instagram}
+                  alt="instagram"
+                />
+              </div>
             </div>
           </div>
           <div className="text-[#8F8F8F] flex flex-col gap-y-5">
