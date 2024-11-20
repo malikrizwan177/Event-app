@@ -2,6 +2,9 @@ import { Route, Routes } from "react-router-dom"
 import Navbar from "./components/Navbar"
 import Footer from "./components/Footer"
 import { lazy, Suspense } from "react"
+import Loader from "./components/Loader"
+import { ToastContainer } from "react-toastify"
+import 'react-toastify/dist/ReactToastify.css';
 const Home = lazy(() => import("./pages/Home"))
 const About = lazy(() => import("./pages/About"))
 const Events = lazy(() => import("./pages/Events"))
@@ -12,8 +15,9 @@ const CreateEvent = lazy(() => import("./pages/CreateEvent"))
 const App: React.FC = () => {
   return (
     <div className="">
+      <ToastContainer/>
       <Navbar/>
-      <Suspense fallback={<div>Loading...</div>}>
+      <Suspense fallback={<Loader/>}>
         <Routes>
           <Route path="/" element={<Home/>}/>
           <Route path="/about" element={<About/>}/>

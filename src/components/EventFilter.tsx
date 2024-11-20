@@ -28,7 +28,7 @@ const EventFilter: React.FC = () => {
           {filterData.filter(item => item.data_type === current).map((item) => (
             item.data.map((item, index) => (
               <div key={index} className="flex flex-col gap-x-5 p-1 shadow-custom-sd rounded-lg max-w-[300px] bg-white relative">
-                <img src={item.img} alt="image" className=""/>
+                <img src={item.img} alt="image" className="w-auto"/>
                 <div>
                   <p className="py-1 px-3 text-[#E33629] bg-white rounded-lg absolute left-3 top-3">${item.price}</p>
                   <img src={assets.heart_red} alt="heart_red"  className="p-2 w-8 rounded-full absolute right-3 top-3 bg-white cursor-pointer"/>

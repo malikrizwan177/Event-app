@@ -6,8 +6,6 @@ import EventFilter from "../components/EventFilter";
 import CustomButton from "../components/CustomButton";
 
 const Home: React.FC = () => {
-  let x = document.getElementById('card_img_1')?.getAttribute('src')
-  x = assets.card_img_1_white
   return (
     <div>
       <HeroHome />
@@ -37,26 +35,73 @@ const Home: React.FC = () => {
             <p className="text-primary font-medium">Time</p>
             <p className="text-gray-600 mt-5">Timing Hours</p>
           </div>
-          <CustomButton text={`Discover Events`} bg_color={`bg-primary`} text_color={`text-white`} hover_bg_color={`bg-cyan-400`} hover_text_color={``} other_classes={`ml-10 md:ml-20`} onclick_func={() => {}}></CustomButton>
+          <CustomButton
+            text={`Discover Events`}
+            bg_color={`bg-primary`}
+            text_color={`text-white`}
+            hover_bg_color={`bg-cyan-400`}
+            hover_text_color={``}
+            other_classes={`ml-10 md:ml-20`}
+            onclick_func={() => {}}
+          ></CustomButton>
         </div>
       </section>
-      <EventFilter/>
+      <EventFilter />
       <div className="px-5 sm:px-[5vw] md:px-[7vw] lg:px-[9vw] py-20">
         <div className="flex flex-col md:flex-row gap-10 text-center">
-          <div id="card_1" className={`px-10 py-16 shadow-custom-sd rounded-lg flex flex-col gap-5 justify-center items-center hover:bg-primary  transition-all ease-in-out duration-300 hover:${x}`}>
-            <img id="card_img_1" src={assets.card_img_1_white} alt="updates" className="bg-primary rounded-full p-4 w-20"/>
-            <p className="text-primary font-semibold text-2xl max-w-[210px]">Get the Accurate Updates</p>
-            <p className="text-[#8f8f8f] font-medium text-sm">Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document.</p>
+          <div
+            id="card_1"
+            className={`px-10 py-16 shadow-custom-sd rounded-lg flex flex-col gap-5 justify-center items-center hover:bg-primary  transition-all ease-in-out duration-300`}
+          >
+            <img
+              id="card_img_1"
+              src={assets.card_img_1_white}
+              alt="updates"
+              className="bg-primary rounded-full p-4 w-20"
+            />
+            <p className="text-primary font-semibold text-2xl max-w-[210px]">
+              Get the Accurate Updates
+            </p>
+            <p className="text-[#8f8f8f] font-medium text-sm">
+              Lorem ipsum is a placeholder text commonly used to demonstrate the
+              visual form of a document.
+            </p>
           </div>
-          <div id="card_2" className="px-10 py-16 shadow-custom-sd rounded-lg flex flex-col gap-5 justify-center items-center hover:bg-primary  transition-all ease-in-out duration-300">
-            <img id="card_img_2" src={assets.card_img_2_white} alt="booking" className="bg-primary rounded-full p-4 w-20"/>
-            <p className="text-primary font-semibold text-2xl max-w-[210px]">Get the Fastest Booking</p>
-            <p className="text-[#8f8f8f] font-medium text-sm">Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document.</p>
+          <div
+            id="card_2"
+            className="px-10 py-16 shadow-custom-sd rounded-lg flex flex-col gap-5 justify-center items-center hover:bg-primary  transition-all ease-in-out duration-300"
+          >
+            <img
+              id="card_img_2"
+              src={assets.card_img_2_white}
+              alt="booking"
+              className="bg-primary rounded-full p-4 w-20"
+            />
+            <p className="text-primary font-semibold text-2xl max-w-[210px]">
+              Get the Fastest Booking
+            </p>
+            <p className="text-[#8f8f8f] font-medium text-sm">
+              Lorem ipsum is a placeholder text commonly used to demonstrate the
+              visual form of a document.
+            </p>
           </div>
-          <div id="card_3" className="px-10 py-16 shadow-custom-sd rounded-lg flex flex-col gap-5 justify-center items-center hover:bg-primary  transition-all ease-in-out duration-300">
-            <img id="card_img_3" src={assets.card_img_3_white} alt="match" className="bg-primary rounded-full p-4 w-20"/>
-            <p className="text-primary font-semibold text-2xl max-w-[210px]">Get the Perfect Matches</p>
-            <p className="text-[#8f8f8f] font-medium text-sm">Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document.</p>
+          <div
+            id="card_3"
+            className="px-10 py-16 shadow-custom-sd rounded-lg flex flex-col gap-5 justify-center items-center hover:bg-primary  transition-all ease-in-out duration-300"
+          >
+            <img
+              id="card_img_3"
+              src={assets.card_img_3_white}
+              alt="match"
+              className="bg-primary rounded-full p-4 w-20"
+            />
+            <p className="text-primary font-semibold text-2xl max-w-[210px]">
+              Get the Perfect Matches
+            </p>
+            <p className="text-[#8f8f8f] font-medium text-sm">
+              Lorem ipsum is a placeholder text commonly used to demonstrate the
+              visual form of a document.
+            </p>
           </div>
         </div>
       </div>
