@@ -29,6 +29,10 @@ import location_icon from "./location.png"
 import google_icon from "./google.png"
 import facebook_icon from "./facebook.png"
 import loader from "./805.gif"
+import event_organizer from "./event_organizer.png"
+import date_icon from "./Date.png"
+import location_icon_2 from "./location2.png"
+import time_icon from "./time.png"
 
 export const assets = {
     event_logo,
@@ -61,5 +65,9 @@ export const assets = {
     location_icon,
     google_icon,
     facebook_icon,
-    loader
+    loader,
+    event_organizer,
+    location_icon_2,
+    time_icon,
+    date_icon
 }
