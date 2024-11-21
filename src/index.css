@@ -4,6 +4,10 @@
 @tailwind components;
 @tailwind utilities;
 
+*{
+    scroll-behavior: smooth;
+}
+
 a.active p{
     color: #06AED5
 }

@@ -13,6 +13,7 @@ const Blog = lazy(() => import("./pages/Blog"))
 const Login = lazy(() => import("./pages/Login"))
 const CreateEvent = lazy(() => import("./pages/CreateEvent"))
 const EventDetail = lazy(() => import("./pages/EventDetail"))
+const TicketDetail = lazy(() => import("./pages/TicketDetail"))
 
 const App: React.FC = () => {
   return (
@@ -28,6 +29,7 @@ const App: React.FC = () => {
           <Route path="/Login" element={<><ScrollToTop/><Login/></>}/>
           <Route path="/create-event" element={<><ScrollToTop/><CreateEvent/></>}/>
           <Route path="/event-detail/:eventId" element={<><ScrollToTop/><EventDetail/></>}/>
+          <Route path="/ticket-detail" element={<><ScrollToTop/><TicketDetail/></>}/>
         </Routes>
       </Suspense>
       <Footer/>
