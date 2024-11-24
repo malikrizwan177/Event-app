@@ -1,4 +1,4 @@
-import { useParams } from "react-router-dom";
+import { Link, Navigate, useParams } from "react-router-dom";
 import EventFilter from "../components/EventFilter";
 import Subscribe from "../components/Subscribe";
 import { filterData } from "..";
@@ -110,15 +110,17 @@ const EventDetail: React.FC = () => {
                     </div>
                   </div>
                 </div>
-                <CustomButton
-                  text={`Get Tickets`}
-                  text_color={`text-white`}
-                  bg_color={`bg-primary`}
-                  hover_text_color={``}
-                  hover_bg_color={`bg-cyan-400`}
-                  other_classes={`max-w-[188px] mx-auto mt-3`}
-                  onclick_func={() => {}}
-                />
+                <Link to={`/ticket-detail`}>
+                  <CustomButton
+                    text={`Get Tickets`}
+                    text_color={`text-white`}
+                    bg_color={`bg-primary`}
+                    hover_text_color={``}
+                    hover_bg_color={`bg-cyan-400`}
+                    other_classes={`max-w-[188px] mx-auto mt-3`}
+                    onclick_func={() => {}}
+                  />
+                </Link>
               </div>
             </div>
           ))
