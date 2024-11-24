@@ -1,4 +1,4 @@
-import { Link, Navigate, useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import EventFilter from "../components/EventFilter";
 import Subscribe from "../components/Subscribe";
 import { filterData } from "..";

@@ -32,28 +32,6 @@ const TicketDetail: React.FC = () => {
     return <div>Loading maps</div>;
   }
 
-  const CountToggle = (params: String) => {
-    switch (params) {
-      case 'e_sub':
-        setEconomyCount(economyCount - 1)
-      case 'v_add':
-        setEconomyCount(vipCount + 1)
-        break;
-      case 'v_sub':
-        setEconomyCount(vipCount - 1)
-        break;
-      case 'vv_add':
-        setEconomyCount(vvipCount + 1)
-        break;
-      case 'vv_sub':
-        setEconomyCount(vvipCount - 1)
-        break;
-      default:
-        setEconomyCount(economyCount + 1)
-        break;
-    }
-  }
-
   return (
     <section>
       <div className="flex flex-col md:flex-row gap-20 items-center justify-between shadow-custom-sd rounded-md mx-5 sm:mx-[5vw] md:mx-[7vw] lg:mx-[9vw] my-5 p-5 md:p-10 text-[#525252]">
