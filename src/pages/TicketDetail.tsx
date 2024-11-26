@@ -1,6 +1,5 @@
 import { useState } from "react";
 import CustomButton from "../components/CustomButton";
-import EventFilter from "../components/EventFilter";
 import Subscribe from "../components/Subscribe";
 import { GoogleMap, useLoadScript, Marker } from "@react-google-maps/api";
 import { assets } from "../assets";
@@ -12,7 +11,7 @@ const TicketDetail: React.FC = () => {
   const [vvipCount, setVvipCount] = useState<number>(0);
   const [ticketPage, setTicketPage] = useState(true);
   const [checkoutPage, setCheckoutPage] = useState(false);
-  const [bookingStatusPage, setBookingStatusPage] = useState(false);
+  // const [bookingStatusPage, setBookingStatusPage] = useState(false);
 
   const mapContainerStyle = {
     maxWidth: "500px",
