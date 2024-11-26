@@ -4,6 +4,7 @@ import Subscribe from "../components/Subscribe";
 import { GoogleMap, useLoadScript, Marker } from "@react-google-maps/api";
 import { assets } from "../assets";
 import { filterData } from "..";
+import { useNavigate } from "react-router-dom";
 
 const TicketDetail: React.FC = () => {
   const [economyCount, setEconomyCount] = useState<number>(0);
@@ -11,7 +12,9 @@ const TicketDetail: React.FC = () => {
   const [vvipCount, setVvipCount] = useState<number>(0);
   const [ticketPage, setTicketPage] = useState(true);
   const [checkoutPage, setCheckoutPage] = useState(false);
-  // const [bookingStatusPage, setBookingStatusPage] = useState(false);
+  const [bookingStatusPage, setBookingStatusPage] = useState(false);
+
+  const navigate = useNavigate();
 
   const mapContainerStyle = {
     maxWidth: "500px",
@@ -40,7 +43,7 @@ const TicketDetail: React.FC = () => {
     <section>
       {/* Ticket Page */}
       {ticketPage && (
-        <div className="flex flex-col md:flex-row gap-20 items-center justify-between shadow-custom-sd rounded-md mx-5 sm:mx-[5vw] md:mx-[7vw] lg:mx-[9vw] mt-8 mb-20 p-5 md:p-10 text-[#525252]">
+        <div className="flex flex-col md:flex-row gap-20 items-center justify-between shadow-custom-sd rounded-lg mx-5 sm:mx-[5vw] md:mx-[7vw] lg:mx-[9vw] mt-8 mb-20 p-5 md:p-10 text-[#525252]">
           <div className="w-full">
             <p className="text-4xl font-semibold">Ticket Details</p>
             <div className="flex justify-between gap-10 sm:gap-16 md:gap-20 lg:gap-40 my-10">
@@ -192,10 +195,14 @@ const TicketDetail: React.FC = () => {
               .map((item, index) => (
                 <div
                   key={index}
-                  className="shadow-custom-sd rounded-md text-[#525252] max-w-[420px] lg:min-w-[420px] p-5"
+                  className="shadow-custom-sd rounded-lg text-[#525252] max-w-[420px] lg:min-w-[420px] p-5"
                 >
                   <div className="flex flex-col lg:flex-row gap-2">
-                    <img src={item.img} alt="event_image" className="w-full max-w-[175px] max-h-[140px]" />
+                    <img
+                      src={item.img}
+                      alt="event_image"
+                      className="w-full max-w-[175px] max-h-[140px]"
+                    />
                     <div>
                       <p className="text-xl font-medium">{item.description}</p>
                       <p className="text-xs mt-3">
@@ -205,7 +212,9 @@ const TicketDetail: React.FC = () => {
                       <p className="text-xs mt-3">{item.location}</p>
                     </div>
                   </div>
-                  <p className="text-2xl font-semibold mt-8">Ticket Order Summary</p>
+                  <p className="text-2xl font-semibold mt-8">
+                    Ticket Order Summary
+                  </p>
                   <div className="grid grid-cols-2 justify-start gap-y-3 font-medium text-base w-full mt-4">
                     <p>3x Economy Tickets</p>
                     <p>$120.00</p>
@@ -214,9 +223,76 @@ const TicketDetail: React.FC = () => {
                     <p>Total</p>
                     <p>$140.00</p>
                   </div>
+                  <p className="text-sm font-medium mt-8">Get any coupon?</p>
+                  <div className="relative w-full mt-5 shadow-custom-sd rounded-lg">
+                    <input
+                      type="text"
+                      name="text"
+                      id="text"
+                      placeholder="Enter Coupon"
+                      className="rounded-lg outline-none w-full p-5 text-xs"
+                    />
+                    <CustomButton
+                      text={`Apply`}
+                      bg_color={`bg-primary`}
+                      text_color={`text-white`}
+                      hover_bg_color={`bg-cyan-400`}
+                      hover_text_color={``}
+                      other_classes={`absolute right-3 top-2 font-medium`}
+                      onclick_func={() => {}}
+                    ></CustomButton>
+                  </div>
+                  <CustomButton
+                    text={`Continue`}
+                    bg_color={`bg-primary`}
+                    text_color={`text-white`}
+                    hover_bg_color={`bg-cyan-400`}
+                    hover_text_color={``}
+                    other_classes={`mx-auto flex flex-row justify-center items-center mt-5`}
+                    onclick_func={() => {
+                      setTicketPage(false);
+                      setCheckoutPage(false);
+                      setBookingStatusPage(true);
+                    }}
+                  />
                 </div>
               ))
           )}
+        </div>
+      )}
+      {/* Booking status page */}
+      {bookingStatusPage && (
+        <div className="flex flex-col gap-7 items-center justify-center text-center shadow-custom-sd rounded-md mx-5 sm:mx-[5vw] md:mx-[7vw] lg:mx-[9vw] mt-8 mb-20 p-10 md:p-16 text-[#525252]">
+          <h1 className="text-primary text-3xl md:text-5xl font-semibold">
+            Congratulations
+          </h1>
+          <p className="text-xl md:text-2xl font-medium">
+            Your booking has been successful
+          </p>
+          <CustomButton
+            text={`Go to Home`}
+            bg_color={`bg-primary`}
+            text_color={`text-white`}
+            hover_bg_color={`bg-cyan-400`}
+            hover_text_color={``}
+            other_classes={`mx-auto flex flex-row justify-center items-center mt-3`}
+            onclick_func={() => {
+              setTimeout(() => {
+                return navigate(`/`);
+              }, 1000);
+            }}
+          />
+          <div className="shadow-custom-sd max-w-[531px] py-10 px-6 my-8 text-sm md:text-base font-medium text-[#8f8f8f]">
+            <span className="flex justify-center">
+              Ticket sent to&nbsp;
+              <p className="text-primary">Event@gmail.com</p>
+            </span>
+            <p>
+              You wll receive the link to the event content in your order
+              confirmation email and get a reminder email before the event
+              starts
+            </p>
+          </div>
         </div>
       )}
       <Subscribe />
