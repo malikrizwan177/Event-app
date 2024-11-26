@@ -5,14 +5,16 @@ import { GoogleMap, useLoadScript, Marker } from "@react-google-maps/api";
 import { assets } from "../assets";
 import { filterData } from "..";
 import { useNavigate } from "react-router-dom";
+import { toast } from "react-toastify";
 
 const TicketDetail: React.FC = () => {
   const [economyCount, setEconomyCount] = useState<number>(0);
   const [vipCount, setVipCount] = useState<number>(0);
   const [vvipCount, setVvipCount] = useState<number>(0);
-  const [ticketPage, setTicketPage] = useState(true);
-  const [checkoutPage, setCheckoutPage] = useState(false);
-  const [bookingStatusPage, setBookingStatusPage] = useState(false);
+  const [ticketPage, setTicketPage] = useState<Boolean>(true);
+  const [checkoutPage, setCheckoutPage] = useState<Boolean>(false);
+  const [bookingStatusPage, setBookingStatusPage] = useState<Boolean>(false);
+  // const [loader, setLoader] = useState<Boolean>(false)
 
   const navigate = useNavigate();
 
@@ -250,9 +252,12 @@ const TicketDetail: React.FC = () => {
                     hover_text_color={``}
                     other_classes={`mx-auto flex flex-row justify-center items-center mt-5`}
                     onclick_func={() => {
-                      setTicketPage(false);
-                      setCheckoutPage(false);
-                      setBookingStatusPage(true);
+                      setTimeout(() => {
+                        setTicketPage(false);
+                        setCheckoutPage(false);
+                        setBookingStatusPage(true);
+                        toast.success('Booking successful')
+                      }, 1000);
                     }}
                   />
                 </div>
