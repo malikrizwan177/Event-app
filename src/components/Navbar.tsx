@@ -1,11 +1,21 @@
-import { useState } from "react"
+import { useContext, useState } from "react"
 import { Link, NavLink } from "react-router-dom"
 import { assets } from "../assets"
 import CustomButton from "./CustomButton"
+import { EventContext } from "../context/EventContext"
+import { toast } from "react-toastify"
 
 const Navbar: React.FC = () => {
 
     const [visible, setVisible] = useState<Boolean>(false)
+    const { navigate, token, setToken } = useContext(EventContext);
+
+    const logout = () => {
+        navigate(`/login`);
+        localStorage.removeItem("token");
+        setToken("");
+        toast.success("Logged Out");
+    };
 
   return (
     <header className="px-5 sm:px-[5vw] md:px-[7vw] lg:px-[9vw]">
@@ -24,9 +34,27 @@ const Navbar: React.FC = () => {
                 <NavLink to={`/blog`} className={`hover:text-[#06AED5]`}>
                     <p>Blog</p>
                 </NavLink>
-                <NavLink to={`/login`} className={`hover:text-[#06AED5]`}>
+                {token ? (
+                    <div className="group relative">
+                    <img
+                        src={assets.profile_icon}
+                        alt="profile_icon"
+                        className="w-5 cursor-pointer"
+                    />
+                        <div className="group-hover:block hidden absolute dropdown-menu right-0 pt-4">
+                        <div className="flex flex-col gap-2 w-36 py-3 px-5 bg-slate-100 text-gray-500 rounded">
+                            <p className="cursor-pointer hover:text-black">My profile</p>
+                            <p onClick={logout} className="cursor-pointer hover:text-black">
+                            Logout
+                            </p>
+                        </div>
+                        </div>
+                </div>
+                ) : (
+                    <NavLink to={`/login`} className={`hover:text-[#06AED5]`}>
                     <p>Login</p>
-                </NavLink>
+                    </NavLink>
+                )}
                 <NavLink to={`/create-event`}>
                 <CustomButton text={`Create Event`} bg_color={`bg-primary`} text_color={`text-white`} hover_bg_color={`bg-cyan-400`} hover_text_color={``} other_classes={``} onclick_func={() => {}}></CustomButton>
                 </NavLink>
@@ -43,7 +71,25 @@ const Navbar: React.FC = () => {
                 <NavLink to='/about' className='py-2 pl-6 border' onClick={() => setVisible(false)}>About</NavLink>
                 <NavLink to='/events' className='py-2 pl-6 border' onClick={() => setVisible(false)}>Events</NavLink>
                 <NavLink to='/blog' className='py-2 pl-6 border' onClick={() => setVisible(false)}>Blog</NavLink>
-                <NavLink to='/login' className='py-2 pl-6 border' onClick={() => setVisible(false)}>Login</NavLink>
+                {token ? (
+                    <div className="group relative">
+                    <img
+                        src={assets.profile_icon}
+                        alt="profile_icon"
+                        className="w-5 cursor-pointer"
+                    />
+                        <div className="group-hover:block hidden absolute dropdown-menu right-0 pt-4">
+                        <div className="flex flex-col gap-2 w-36 py-3 px-5 bg-slate-100 text-gray-500 rounded">
+                            <p className="cursor-pointer hover:text-black">My profile</p>
+                            <p onClick={logout} className="cursor-pointer hover:text-black">
+                            Logout
+                            </p>
+                        </div>
+                        </div>
+                </div>
+                ) : (
+                    <NavLink to='/login' className='py-2 pl-6 border' onClick={() => setVisible(false)}>Login</NavLink>
+                )}
                 <NavLink to={`/create-event`} className={`px-5 py-2 bg-primary text-white hover:bg-cyan-400 rounded-lg text-center max-w-40 mt-5 ml-6`} onClick={() => setVisible(false)}>
                     <button>Create Event</button>
                 </NavLink>

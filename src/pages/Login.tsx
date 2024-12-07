@@ -1,45 +1,59 @@
-import { useNavigate } from "react-router-dom";
 import { assets } from "../assets";
 import CustomButton from "../components/CustomButton";
-import { useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { toast } from "react-toastify";
+import { EventContext } from "../context/EventContext";
+import axios from "axios";
 
 const Login: React.FC = () => {
   const [name, setName] = useState("")
   const [email, setEmail] = useState<string>("");
   const [password, setPassword] = useState<string>("");
   const [currentState, setCurrentState] = useState<Boolean>(true);
+  const { token, setToken, navigate, backendURL } = useContext(EventContext)
 
-  const navigate = useNavigate();
-
-  const onSubmitFormHandler = (e: any) => {
-    e.preventDefault();
-
-    // Simulating a login process with a delay
-    if (currentState) {
-      setTimeout(() => {
-        // Checking if the email and password are correct
-        if (email === "test@example.com" && password === "password123") {
-          // Redirect to the home page after successful login
-          toast.success('Login successful')
-          navigate("/");
+  const onSubmitHandler = async (e: any) => {
+    e.preventDefault()
+    try {
+      if (!currentState) {
+        const response = await axios.post(backendURL + "/api/register", {name, email, password})
+        if (response.data.success) {
+          setToken(response.data.token)
+          localStorage.setItem('token', response.data.token)
+          toast.success("Sign up successful")
         } else {
-          toast.error('Invalid email or password')
+          toast.error(response.data.message)
         }
-      }, 500);
-    } else {
-      setTimeout(() => {
-        // Checking if the email and password are correct
-        if (name === "test" && email === "test@example.com" && password === "password123") {
-          // Redirect to the home page after successful login
-          toast.success('Sign up successful')
-          navigate("/");
+          
+      } else {
+        const response = await axios.post(backendURL + "/api/login", {email, password})
+        
+        if (response.data.success) {
+          console.log(response);
+          
+          setToken(response.data.token)
+          localStorage.setItem('token', response.data.token)
+          toast.success("Login successful")
         } else {
-          toast.error('This user already exists')
+          toast.error(response.data.message)
+          console.log(response);
         }
-      }, 500);
+      }
+    } catch (error: any) {
+      console.log(error.response.data.message);
+      toast.error(error.response.data.message)
     }
-  };
+  }
+
+  useEffect(() => {
+    if (token) {
+      navigate(`/`)
+    }
+  
+    return () => {
+      null
+    }
+  }, [token])
 
   const signUpToggle = () => {
     setCurrentState(!currentState)
@@ -52,7 +66,7 @@ const Login: React.FC = () => {
       <div className={`py-10 px-8 sm:px-20 flex flex-col items-center justify-start gap-5 bg-white max-w-[530px] ${currentState ? 'max-h-[700px]' : 'h-[650px]'} w-full rounded-lg my-20`}>
         <p className="font-semibold text-2xl">Sign {currentState ? 'In' : 'Up'}</p>
         <form
-          onSubmit={onSubmitFormHandler}
+          onSubmit={onSubmitHandler}
           className="w-full mt-10 flex flex-col gap-5"
         >
           {!currentState && (

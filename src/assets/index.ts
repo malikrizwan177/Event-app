@@ -36,6 +36,7 @@ import time_icon from "./time.png"
 import card from "./card.png"
 import paypal from "./paypal.png"
 import apple from "./apple.png"
+import profile_icon from "./profile_icon.png"
 
 export const assets = {
     event_logo,
@@ -75,5 +76,6 @@ export const assets = {
     date_icon,
     card,
     paypal,
-    apple
+    apple,
+    profile_icon
 }
