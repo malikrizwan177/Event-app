@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { assets } from "../assets";
 
-const Footer:React.FC = () => {
+const Footer: React.FC = () => {
   return (
     <>
       <footer className="px-5 sm:px-[5vw] md:px-[7vw] lg:px-[9vw] py-10 md:py-20 w-full">
@@ -16,25 +16,13 @@ const Footer:React.FC = () => {
             </p>
             <div className="flex gap-5">
               <div className="w-9 h-9 p-3 bg-primary rounded-full cursor-pointer hover:bg-cyan-400 flex justify-center items-center">
-                <img
-                  loading="lazy"
-                  src={assets.facebook}
-                  alt="facebook" 
-                />
+                <img loading="lazy" src={assets.facebook} alt="facebook" />
               </div>
               <div className="w-9 h-9 p-2 bg-primary rounded-full cursor-pointer hover:bg-cyan-400 flex justify-center items-center">
-                <img
-                  loading="lazy"
-                  src={assets.twitter}
-                  alt="twitter"
-                />
+                <img loading="lazy" src={assets.twitter} alt="twitter" />
               </div>
               <div className="w-9 h-9 p-2 bg-primary rounded-full cursor-pointer hover:bg-cyan-400 flex justify-center items-center">
-                <img
-                  loading="lazy"
-                  src={assets.instagram}
-                  alt="instagram"
-                />
+                <img loading="lazy" src={assets.instagram} alt="instagram" />
               </div>
             </div>
           </div>
@@ -82,8 +70,10 @@ const Footer:React.FC = () => {
           </div>
         </div>
       </footer>
-      <hr className="h-0.5 bg-gray-200"/>
-      <p className="text-[#8F8F8F] text-sm font-medium text-center py-5 px-5 sm:px-[5vw] md:px-[7vw] lg:px-[9vw]">All Rights Reserved - Muhammad Rizwan Malik - @2024</p>
+      <hr className="h-0.5 bg-gray-200" />
+      <p className="text-[#8F8F8F] text-sm font-medium text-center py-5 px-5 sm:px-[5vw] md:px-[7vw] lg:px-[9vw]">
+        All Rights Reserved - Muhammad Rizwan Malik - @2024
+      </p>
     </>
   );
 };
