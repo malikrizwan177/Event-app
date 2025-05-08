@@ -42,7 +42,7 @@ const Home: React.FC = () => {
             hover_bg_color={`bg-cyan-400`}
             hover_text_color={``}
             other_classes={`ml-10 md:ml-20`}
-            onclick_func={() => {}}
+            onClick={() => {}}
           ></CustomButton>
         </div>
       </section>
