@@ -37,6 +37,8 @@ import card from "./card.png"
 import paypal from "./paypal.png"
 import apple from "./apple.png"
 import profile_icon from "./profile_icon.png"
+import event_image_placeholder from "./event_image_placeholder.png"
+import about_img from "./about_img.jpg"
 
 export const assets = {
     event_logo,
@@ -77,5 +79,7 @@ export const assets = {
     card,
     paypal,
     apple,
-    profile_icon
+    profile_icon,
+    event_image_placeholder,
+    about_img
 }

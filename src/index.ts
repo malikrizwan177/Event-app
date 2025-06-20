@@ -1,11 +1,34 @@
 import { assets } from "./assets"
 
-export const currentFilter: {text: String, bg_color: String, text_color: String, hover_bg_color: String}[] = [
+export const currentFilter: {text: string, bg_color: string, text_color: string, hover_bg_color: string}[] = [
     {text: 'All', bg_color: 'bg-primary', text_color: 'text-white', hover_bg_color: 'bg-cyan-400'},
     {text: 'Music', bg_color: 'bg-primary', text_color: 'text-white', hover_bg_color: 'bg-cyan-400'},
-    {text: 'Food Feast', bg_color: 'bg-primary', text_color: 'text-white', hover_bg_color: 'bg-cyan-400'},
-    {text: 'Sports Gala', bg_color: 'bg-primary', text_color: 'text-white', hover_bg_color: 'bg-cyan-400'},
+    {text: 'Food', bg_color: 'bg-primary', text_color: 'text-white', hover_bg_color: 'bg-cyan-400'},
+    {text: 'Sports', bg_color: 'bg-primary', text_color: 'text-white', hover_bg_color: 'bg-cyan-400'},
     {text: 'Festivals', bg_color: 'bg-primary', text_color: 'text-white', hover_bg_color: 'bg-cyan-400'},
+    {text: 'Concert', bg_color: 'bg-primary', text_color: 'text-white', hover_bg_color: 'bg-cyan-400'},
+    {text: 'Amusement Parks', bg_color: 'bg-primary', text_color: 'text-white', hover_bg_color: 'bg-cyan-400'},
+    {text: 'Museums', bg_color: 'bg-primary', text_color: 'text-white', hover_bg_color: 'bg-cyan-400'},
+    {text: 'Art & Theater', bg_color: 'bg-primary', text_color: 'text-white', hover_bg_color: 'bg-cyan-400'},
+    {text: 'Shopping', bg_color: 'bg-primary', text_color: 'text-white', hover_bg_color: 'bg-cyan-400'},
+    {text: 'Gaming', bg_color: 'bg-primary', text_color: 'text-white', hover_bg_color: 'bg-cyan-400'},
+    {text: 'Night Clubs', bg_color: 'bg-primary', text_color: 'text-white', hover_bg_color: 'bg-cyan-400'},
+    {text: 'Spiritual', bg_color: 'bg-primary', text_color: 'text-white', hover_bg_color: 'bg-cyan-400'},
+    {text: 'Kids', bg_color: 'bg-primary', text_color: 'text-white', hover_bg_color: 'bg-cyan-400'},
+    {text: 'Logging', bg_color: 'bg-primary', text_color: 'text-white', hover_bg_color: 'bg-cyan-400'},
+    {text: 'Comedy', bg_color: 'bg-primary', text_color: 'text-white', hover_bg_color: 'bg-cyan-400'},
+    {text: 'Seasonal', bg_color: 'bg-primary', text_color: 'text-white', hover_bg_color: 'bg-cyan-400'},
+    {text: 'Music', bg_color: 'bg-primary', text_color: 'text-white', hover_bg_color: 'bg-cyan-400'},
+    {text: 'Events', bg_color: 'bg-primary', text_color: 'text-white', hover_bg_color: 'bg-cyan-400'},
+    {text: 'Recreation', bg_color: 'bg-primary', text_color: 'text-white', hover_bg_color: 'bg-cyan-400'},
+    {text: 'Fitness', bg_color: 'bg-primary', text_color: 'text-white', hover_bg_color: 'bg-cyan-400'},
+    {text: 'Workshop', bg_color: 'bg-primary', text_color: 'text-white', hover_bg_color: 'bg-cyan-400'},
+    {text: 'Cooking', bg_color: 'bg-primary', text_color: 'text-white', hover_bg_color: 'bg-cyan-400'},
+    {text: 'Dating', bg_color: 'bg-primary', text_color: 'text-white', hover_bg_color: 'bg-cyan-400'},
+    {text: 'Arts', bg_color: 'bg-primary', text_color: 'text-white', hover_bg_color: 'bg-cyan-400'},
+    {text: 'Dance', bg_color: 'bg-primary', text_color: 'text-white', hover_bg_color: 'bg-cyan-400'},
+    {text: 'Webinar', bg_color: 'bg-primary', text_color: 'text-white', hover_bg_color: 'bg-cyan-400'},
+    {text: 'Travel and Adventure', bg_color: 'bg-primary', text_color: 'text-white', hover_bg_color: 'bg-cyan-400'},
 ]
 
 export const filterData: {
