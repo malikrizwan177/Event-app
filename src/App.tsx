@@ -15,6 +15,7 @@ const Login = lazy(() => import("./pages/Login"))
 const CreateEvent = lazy(() => import("./pages/CreateEvent"))
 const EventDetail = lazy(() => import("./pages/EventDetail"))
 const TicketDetail = lazy(() => import("./pages/TicketDetail"))
+const Profile = lazy(() => import("./pages/Profile"))
 
 const App: React.FC = () => {
   const { token } = useContext(EventContext);
@@ -29,6 +30,7 @@ const App: React.FC = () => {
           <Route path="/events" element={token ? <><ScrollToTop/><Events/></> : <Navigate to="/login" replace />}/>
           <Route path="/blog" element={token ? <><ScrollToTop/><Blog/></> : <Navigate to="/login" replace />}/>
           <Route path="/login" element={token ? <Navigate to="/" replace /> : <><ScrollToTop/><Login/></>}/>
+          <Route path="/profile" element={token ? <><ScrollToTop/><Profile /></> : <Navigate to="/login" replace />}/>
           <Route path="/create-event" element={token ? <><ScrollToTop/><CreateEvent/></> : <Navigate to="/login" replace />}/>
           <Route path="/event-detail/:eventId" element={token ? <><ScrollToTop/><EventDetail/></> : <Navigate to="/login" replace />}/>
           <Route 

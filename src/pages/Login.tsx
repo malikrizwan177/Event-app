@@ -60,6 +60,23 @@ const Login: React.FC = () => {
         setPhoneNumber("");
         setIsDropdownOpen(false);
       }
+      if (data.suceess) {
+        if (
+          !currentState &&
+          data.message === "Successfully created user, check email for verification token!"
+        ) {
+          toast.success(data.message);
+          setLoginLoader(false);
+          setName("");
+          setEmail("");
+          setPassword("");
+          setConfirmPassword("");
+          setRole("");
+          setPhoneNumber("");
+          setIsDropdownOpen(false);
+          return;
+        }
+      }
     } catch (error: any) {
       const errorMessage = error.response?.data?.message || error.message;
       toast.error(errorMessage);
