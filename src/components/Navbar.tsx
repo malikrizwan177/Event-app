@@ -18,8 +18,9 @@ const Navbar: React.FC = () => {
   return (
     <header className="px-5 sm:px-[5vw] md:px-[7vw] lg:px-[9vw]">
       <nav className="flex justify-between font-medium py-4">
-        <Link to={`/`}>
-          <img src={assets.event_logo} alt="event_logo" className="w-24" />
+        <Link to={`/`} className="flex gap-2 items-center">
+          <img src={assets.event_logo} alt="event_logo" className="w-12" />
+          <h1 className="text-[#06AED5] text-lg">EVENT FINDER</h1>
         </Link>
         <ul className="hidden sm:flex gap-4 xs:gap-6 md:gap-8 lg:gap-12 justify-center items-center text-[#CBCBCB]">
           <NavLink to={`/`} className={`hover:text-[#06AED5]`}>
