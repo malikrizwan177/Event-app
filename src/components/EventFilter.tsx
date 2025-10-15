@@ -192,22 +192,22 @@ const EventFilter: React.FC = () => {
               No events found for “{current}”.
             </p>
           ) : (
-            Array.isArray(visibleEvents) &&
+            visibleEvents && Array.isArray(visibleEvents) &&
             visibleEvents.map((event: any) => (
               <Link
-                key={event.id}
-                to={`/event-detail/${event.id}`}
+                key={event?.id}
+                to={`/event-detail/${event?.id}`}
                 className="flex flex-col gap-x-5 p-1 shadow-custom-sd rounded-lg w-[300px] bg-white relative hover:scale-105 transition-transform"
               >
                 <img
-                  src={`${backendURL}/public/${event.images[0].path}`}
-                  alt={event.description}
+                  src={event?.images[0]?.path ? `${backendURL}/public/${event?.images[0]?.path}` : assets.no_image}
+                  alt={event?.description}
                   loading="lazy"
                   className="w-auto h-40 object-cover rounded-t-lg"
                 />
 
                 <p className="absolute left-3 top-3 bg-white py-1 px-3 text-[#E33629] rounded-lg font-medium">
-                  ${event.tickets[0].price}
+                  ${event?.tickets[0]?.price}
                 </p>
                 <img
                   src={assets.heart_red}
@@ -219,17 +219,17 @@ const EventFilter: React.FC = () => {
                 <div className="flex gap-5 px-2 pt-4 pb-2">
                   <div className="text-center">
                     <p className="text-xl text-[#8f8f8f]">
-                      {new Date(event.event_date).toLocaleString("default", {
+                      {new Date(event?.event_date).toLocaleString("default", {
                         month: "short",
                       })}
                     </p>
                     <p className="text-3xl text-primary font-semibold">
-                      {new Date(event.event_date).getDate()}
+                      {new Date(event?.event_date).getDate()}
                     </p>
                   </div>
                   <div className="flex-1">
                     <p className="text-lg text-[#525252] font-semibold leading-relaxed">
-                      {event.description}
+                      {event?.description}
                     </p>
                     <div className="flex items-center gap-1 mt-2">
                       <img
@@ -240,9 +240,9 @@ const EventFilter: React.FC = () => {
                       />
                       <p className="text-xs text-[#6d6d6d] font-medium">
                         {[
-                          event.address,
-                          event.city !== "null" && event.city,
-                          event.state !== "null" && event.state,
+                          event?.address,
+                          event?.city !== "null" && event?.city,
+                          event?.state !== "null" && event?.state,
                         ]
                           .filter(Boolean)
                           .join(", ")}

@@ -1,12 +1,12 @@
 type Props = {
-  text: string | String;
-  bg_color: string | String;
-  text_color: string | String;
-  hover_bg_color: string | String;
-  hover_text_color: string | String;
-  other_classes: string | String;
-  isLoading?: boolean;
-  loaderColor?: string | String;
+  text: string | undefined;
+  bg_color: string | undefined;
+  text_color: string | undefined;
+  hover_bg_color: string | undefined;
+  hover_text_color: string | undefined;
+  other_classes: string | undefined;
+  isLoading?: boolean | undefined;
+  loaderColor?: string | undefined;
 } & React.ComponentPropsWithoutRef<'button'>;
 
 const CustomButton: React.FC<Props> = ({

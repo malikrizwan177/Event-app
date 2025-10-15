@@ -1,20 +1,20 @@
-import { useState } from "react";
+// import { useState } from "react";
 import { assets } from "../assets";
 import CustomButton from "./CustomButton";
 
 const HeroHome: React.FC = () => {
-  const videoNumber: String[] = ["01", "02", "03", "04", "05"];
+  // const videoNumber: String[] = ["01", "02", "03", "04", "05"];
 
-  const [currentVideo, setCurrentVideo] = useState<number>(3);
+  // const [currentVideo, setCurrentVideo] = useState<number>(3);
 
-  const nextVideo = (): any =>
-    setCurrentVideo(
-      currentVideo === videoNumber.length - 1 ? 0 : currentVideo + 1
-    );
-  const preVideo = (): any =>
-    setCurrentVideo(
-      currentVideo === 0 ? videoNumber.length - 1 : currentVideo - 1
-    );
+  // const nextVideo = (): any =>
+  //   setCurrentVideo(
+  //     currentVideo === videoNumber.length - 1 ? 0 : currentVideo + 1
+  //   );
+  // const preVideo = (): any =>
+  //   setCurrentVideo(
+  //     currentVideo === 0 ? videoNumber.length - 1 : currentVideo - 1
+  //   );
 
   return (
     <section className="w-full h-auto md:h-lvh bg-hero-home bg-blend-darken bg-black bg-opacity-50 bg-no-repeat bg-cover py-10 sm:py-20 md:py-40 ">
@@ -80,7 +80,7 @@ const HeroHome: React.FC = () => {
           />
         </div>
       </div>
-      <div className="px-5 sm:px-[5vw] md:px-[7vw] lg:px-[9vw] flex justify-center sm:justify-end mt-20 md:mt-40">
+      {/* <div className="px-5 sm:px-[5vw] md:px-[7vw] lg:px-[9vw] flex justify-center sm:justify-end mt-20 md:mt-40">
         <div className="flex gap-5 text-lg md:text-3xl text-white">
           <img
             onClick={preVideo}
@@ -108,7 +108,7 @@ const HeroHome: React.FC = () => {
             className="cursor-pointer w-8 md:w-12"
           />
         </div>
-      </div>
+      </div> */}
     </section>
   );
 };

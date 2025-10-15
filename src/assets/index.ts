@@ -39,6 +39,7 @@ import apple from "./apple.png";
 import profile_icon from "./profile_icon.png";
 import event_image_placeholder from "./event_image_placeholder.png";
 import about_img from "./about_img.jpg";
+import no_image from "./no_image.png";
 
 export const assets = {
   event_logo,
@@ -82,4 +83,5 @@ export const assets = {
   profile_icon,
   event_image_placeholder,
   about_img,
+  no_image,
 };

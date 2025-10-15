@@ -56,7 +56,7 @@ const Footer: React.FC = () => {
       </footer>
       <hr className="h-0.5 bg-gray-200" />
       <p className="text-[#8F8F8F] text-sm font-medium text-center py-5 px-5 sm:px-[5vw] md:px-[7vw] lg:px-[9vw]">
-        All Rights Reserved - Event Finder - @2024
+        All Rights Reserved - Event Finder - @{new Date().getFullYear()}
       </p>
     </>
   );
