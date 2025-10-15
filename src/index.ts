@@ -32,15 +32,15 @@ export const currentFilter: {text: string, bg_color: string, text_color: string,
 ]
 
 export const filterData: {
-   data_type: String, 
+   data_type: string, 
    data:{
-        id: String,
+        id: string,
         img: string,
-        price: String,
-        month: String,
-        date: String,
-        location: String,
-        description: String
+        price: string,
+        month: string,
+        date: string,
+        location: string,
+        description: string
     }[]}[] = [
   {data_type: 'All',
     data : [
